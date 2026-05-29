@@ -53,23 +53,27 @@ lib.optionals pkgs.stdenv.isLinux [
   # Popular alternatives to traditional Unix tools. Enhance productivity
   # for both humans and AI assistants (syntax highlighting, fuzzy finding).
 
+  atuin # Command history and fuzzy search
   bat # Better cat with syntax highlighting
+  btop # Modern process monitor with graphs (replaces htop for daily use)
   delta # Better git diff viewer with syntax highlighting
   eza # Modern ls replacement with git integration
   fd # Faster, user-friendly find alternative
   fzf # Fuzzy finder for interactive selection
   gnugrep # GNU grep with zgrep for compressed files
   gnutar # GNU tar as 'gtar' (Mac-safe tar without ._* files)
-  btop # Modern process monitor with graphs (replaces htop for daily use)
   htop # Interactive process viewer (better top)
   jq # JSON parsing for config files and API responses
   ncdu # NCurses disk usage analyzer
+  neovim # Text editor with Lua plugin support
   ripgrep # Fast grep alternative (rg) - essential for AI agents
+  starship # Cross-shell prompt theme
   tldr # Simplified, community-driven man pages
   tree # Directory tree visualization
   watchexec # File watcher that re-executes commands on changes
   yq # YAML parsing (like jq but for YAML/XML/TOML)
   zellij # Modern terminal multiplexer (Rust, layout engine)
+  zoxide # Fast directory navigation
 
   # ==========================================================================
   # Document Processing (Claude document-skills)
@@ -112,10 +116,12 @@ lib.optionals pkgs.stdenv.isLinux [
   # ==========================================================================
   # Password management and secure credential storage for all environments.
 
+  _1password-cli # CLI for 1Password password manager
+  _1password-gui # GUI for 1Password password manager
+  # aws-vault # AWS credential management — session credentials backed by the OS keychain/credential store (used by av/avl/avd/ava/avr aliases)
   # bitwarden-cli # CLI for Bitwarden password manager (bw command)
   # bws # Bitwarden Secrets Manager CLI (for machine secrets)
   doppler # Doppler secrets manager CLI (for CI/CD and team secrets)
-  # aws-vault # AWS credential management — session credentials backed by the OS keychain/credential store (used by av/avl/avd/ava/avr aliases)
 
   # ==========================================================================
   # Remote Shell
