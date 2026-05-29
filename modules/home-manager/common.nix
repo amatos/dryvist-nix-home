@@ -21,7 +21,7 @@
       defaultBranch = "main";
     };
     gpg = {
-      signingKey = "";
+      signingKey = "F41BDBF6171A3BB4";
     };
   },
   ...
@@ -140,9 +140,9 @@ in
         export GPG_TTY=$(tty)
 
         # --- PATH ---
+        export PATH="$HOME/.local/bin:$PATH"
         export PATH="$HOME/.npm-packages/bin:$PATH"
         export NODE_PATH="$HOME/.npm-packages/lib/node_modules"
-        export PATH="$HOME/.local/bin:$PATH"
 
         # --- Shell modules ---
         ${lib.optionalString pkgs.stdenv.isDarwin "source ${awsConfig.initScript}"}

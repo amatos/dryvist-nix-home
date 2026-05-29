@@ -38,6 +38,8 @@
   # This activates both system (nix-darwin) and user (home-manager) configs
   # Usage: d-r            # darwin-rebuild switch (standard rebuild)
   d-r = "sudo darwin-rebuild switch --flake .";
+  codex-build = "pushd ~/Developer/dryvist-nix-darwin && nix flake update && nh darwin build . && popd";
+  codex-switch = "pushd ~/Developer/dryvist-nix-darwin && nix flake update && nh darwin switch . && popd";
 
   # NO SUDO: Updates flake.lock to latest nixpkgs (must commit before d-r)
   # Usage: nf-u            # update flake in current directory
