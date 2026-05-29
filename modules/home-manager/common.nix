@@ -14,6 +14,10 @@
     user = {
       name = "alberth";
       email = "alberth@matos.cc";
+      # Renamed account: noreply email must be ...+JacobPEvans-personal@ or commits
+      # built from this standalone fallback fail signature verification (bad_email).
+      # On the live machine nix-darwin's user-config.nix overrides this default.
+      # email = "20714140+JacobPEvans-personal@users.noreply.github.com";
       fullName = "Alberth Matos";
     };
     git = {
@@ -91,6 +95,7 @@ in
       # instead of hard-coding /Users/<you>/git/...
       GIT_HOME = "${config.home.homeDirectory}/git";
       GIT_HOME_PUBLIC = "${config.home.homeDirectory}/git/public";
+      GIT_HOME_PRIVATE = "${config.home.homeDirectory}/git/dryvist-private";
     }
     // lib.optionalAttrs pkgs.stdenv.isDarwin {
       HF_HOME = "/Volumes/HuggingFace";
