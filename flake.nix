@@ -56,7 +56,7 @@
         imports = [
           ./modules/home-manager/common.nix
           ./modules/home-manager/tmux.nix
-          ./modules/monitoring
+          # ./modules/monitoring
           ./modules/home-manager/darwin
         ];
         _module.args.orbstackKubernetesSrc = orbstack-kubernetes;

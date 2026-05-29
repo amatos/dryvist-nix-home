@@ -12,9 +12,9 @@
       homeManagerStateVersion = "25.11";
     };
     user = {
-      name = "jevans";
-      email = "20714140+JacobPEvans@users.noreply.github.com";
-      fullName = "JacobPEvans";
+      name = "alberth";
+      email = "alberth@matos.cc";
+      fullName = "Alberth Matos";
     };
     git = {
       editor = "vim";
