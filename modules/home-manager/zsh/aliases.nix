@@ -93,7 +93,7 @@
   # MLX (Apple Silicon ML Inference Server)
   # ===========================================================================
   # The MLX stack is an always-on LaunchAgent (vllm-mlx + llama-swap on port
-  # 11434, defined in JacobPEvans/nix-ai modules/mlx/). These aliases switch
+  # 11434, defined in amatos/dryvist-nix-ai modules/mlx/). These aliases switch
   # the active backend by ROLE NAME; physical model IDs live in
   # services.aiStack.models (nix-ai modules/ai-stack/default.nix):
   #
@@ -103,6 +103,6 @@
   # The aliases call `mlx-switch`, which is provided by the nix-ai MLX
   # module. They guard against `mlx-switch` being missing so this nix-home
   # module remains usable without nix-ai installed.
-  mlx-coder = "command -v mlx-switch >/dev/null && mlx-switch coding || echo 'mlx-switch missing; enable JacobPEvans/nix-ai MLX module' >&2";
-  mlx-rag = "command -v mlx-switch >/dev/null && mlx-switch large-context || echo 'mlx-switch missing; enable JacobPEvans/nix-ai MLX module' >&2";
+  mlx-coder = "command -v mlx-switch >/dev/null && mlx-switch coding || echo 'mlx-switch missing; enable amatos/dryvist-nix-ai MLX module' >&2";
+  mlx-rag = "command -v mlx-switch >/dev/null && mlx-switch large-context || echo 'mlx-switch missing; enable amatos/dryvist-nix-ai MLX module' >&2";
 }

@@ -34,7 +34,7 @@ Add to your Nix flake:
 ```nix
 {
   inputs.nix-home = {
-    url = "github:JacobPEvans/nix-home";
+    url = "github:amatos/dryvist-nix-home";
     inputs.nixpkgs.follows = "nixpkgs";
     inputs.home-manager.follows = "home-manager";
   };
@@ -91,9 +91,9 @@ Consumed as a flake input by nix-darwin (macOS) and usable standalone on Linux.
 | Repo | Scope | Installs via |
 |------|-------|-------------|
 | **nix-home** (you are here) | User environment (dotfiles, dev tools, LaunchAgents) | home-manager |
-| [nix-ai](https://github.com/JacobPEvans/nix-ai) | AI CLI ecosystem (Claude, Gemini, Copilot, MCP) | home-manager |
+| [nix-ai](https://github.com/amatos/dryvist-nix-ai) | AI CLI ecosystem (Claude, Gemini, Copilot, MCP) | home-manager |
 | [nix-devenv](https://github.com/JacobPEvans/nix-devenv) | Reusable dev shells (Terraform, Ansible, K8s, AI/ML) | nix develop / flake init |
-| [nix-darwin](https://github.com/JacobPEvans/nix-darwin) | macOS system config (Dock, Finder, Homebrew, security) | nix-darwin |
+| [nix-darwin](https://github.com/amatos/dryvist-nix-darwin) | macOS system config (Dock, Finder, Homebrew, security) | nix-darwin |
 
 ## License
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.23.1.1](https://github.com/amatos/dryvist-nix-home/compare/v1.23.1...v1.24.0) (2026-05-28)
+
+
+### Features
+
+* **flake:** upgrade nixpkgs and home-manager inputs from 25.11 to 26.05
+* **repo:** update repository references from JacobPEvans/nix-{home,ai,darwin} to amatos/dryvist-nix-{home,ai,darwin} (CLAUDE.md, README.md, aliases.nix)
+
 ## [1.23.1](https://github.com/JacobPEvans/nix-home/compare/v1.23.0...v1.23.1) (2026-05-25)
 
 

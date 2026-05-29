@@ -88,7 +88,7 @@ sudo darwin-rebuild switch --flake . --override-input nix-home /Users/you/git/ni
 
 | Repo | Purpose |
 |------|---------|
-| [nix-ai](https://github.com/JacobPEvans/nix-ai) | AI coding tools (Claude, Gemini, Copilot) |
+| [nix-ai](https://github.com/amatos/dryvist-nix-ai) | AI coding tools (Claude, Gemini, Copilot) |
 | **nix-home** (this repo) | Dev environment |
 | [nix-devenv](https://github.com/JacobPEvans/nix-devenv) | Reusable dev shells (Terraform, Ansible, K8s, AI/ML) |
-| [nix-darwin](https://github.com/JacobPEvans/nix-darwin) | macOS system config (consumes nix-ai + nix-home) |
+| [nix-darwin](https://github.com/amatos/dryvist-nix-darwin) | macOS system config (consumes nix-ai + nix-home) |
