@@ -40,6 +40,10 @@
   d-r = "sudo darwin-rebuild switch --flake .";
   codex-build = "pushd ~/Developer/dryvist-nix-darwin && nix flake update && nh darwin build . && popd";
   codex-switch = "pushd ~/Developer/dryvist-nix-darwin && nix flake update && nh darwin switch . && popd";
+  codex-flake-ai = "pushd ~/Developer/dryvist-nix-ai && nix flake update && git add flake.lock && git commit -m 'chore: updated flake.lock' -S && git push && popd";
+  codex-flake-home = "pushd ~/Developer/dryvist-nix-home && nix flake update && git add flake.lock && git commit -m 'chore: updated flake.lock' -S && git push && popd";
+  codex-flake-darwin = "pushd ~/Developer/dryvist-nix-darwin && nix flake update && git add flake.lock && git commit -m 'chore: updated flake.lock' -S && git push && popd";
+  codex-flake-all = "codex-flake-ai ; codex-flake-home ; codex-flake-darwin";
 
   # NO SUDO: Updates flake.lock to latest nixpkgs (must commit before d-r)
   # Usage: nf-u            # update flake in current directory
