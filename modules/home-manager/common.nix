@@ -154,6 +154,9 @@ in
         source ${./zsh/git-functions.zsh}
         source ${./zsh/docker-functions.zsh}
         source ${./zsh/process-cleanup.zsh}
+
+        # --- Additional tools ---
+        eval "$(atuin init zsh)"
       '';
     };
 
