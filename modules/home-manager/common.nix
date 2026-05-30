@@ -9,7 +9,7 @@
   lib,
   userConfig ? {
     nix = {
-      homeManagerStateVersion = "25.11";
+      homeManagerStateVersion = "26.05";
     };
     user = {
       name = "alberth";

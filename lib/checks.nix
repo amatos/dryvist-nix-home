@@ -90,7 +90,7 @@
         pkgs = pkgsWithUnfree;
         extraSpecialArgs = {
           userConfig = {
-            nix.homeManagerStateVersion = "25.11";
+            nix.homeManagerStateVersion = "26.05";
             user = {
               name = "test-user";
               email = "test@example.com";
@@ -109,7 +109,7 @@
             home = {
               username = "test-user";
               homeDirectory = "/home/test-user";
-              stateVersion = "25.11";
+              stateVersion = "26.05";
             };
           }
         ];
