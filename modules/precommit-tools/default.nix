@@ -129,7 +129,7 @@
           id = "file-size-check";
           name = "File size check";
           command = "scripts/workflows/check-file-sizes.sh";
-          description = "Warns on large files (6KB), fails over 12KB";
+          description = "Warns on large files (8KB), fails over 16KB";
           stage = "automatic";
         }
       ];
